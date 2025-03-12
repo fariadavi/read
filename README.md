@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# READ Frontend Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This application is the user interface for READ (Repositório Eletrônico de Arquivos e Documentos), an Electronic Document Management System (EDMS) developed for the Department of Applied Informatics (DIA) at the Federal University of the State of Rio de Janeiro (UNIRIO).\
+The system allows users to store, search and retrieve documents with permission management and separation of department files.
 
-In the project directory, you can run:
+## Context
 
-### `npm start`
+This project was developed as part of a capstone project to address the document management needs identified within the DIA at UNIRIO. The goal was to create a tailored solution to improve document handling processes within the department. Details of the project's conception and development can be found in the [associated paper](https://bsi.uniriotec.br/wp-content/uploads/sites/31/2024/04/202401DaviAnjosdeFaria.pdf).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Code
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Folder Structure
 
-### `npm test`
+- `public/`: Static assets.
+- `src/`: Source code of the application.
+  - `components/`: Reusable UI components.
+  - `pages/`: Page components representing different views.
+  - `services/`: Modules for API calls and business logic.
+  - `App.js`: Main application component.
+  - `index.js`: Entry point of the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup 🛠️
 
-### `npm run build`
+### Environment Variables
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A `.env` file with the following environment variables is required:
+- `REACT_APP_SERVER_URL`: URL of the backend API (e.g., `http://localhost:8080`)
+- `REACT_APP_GOOGLE_DEVELOPER_KEY`: Google Cloud API Key (e.g, `ABcdEfG0hIJ12Kl3_MNOP-qR-4StuV5wXyZaB6CD`)
+- `REACT_APP_GOOGLE_OAUTH_CLIENT_ID`: Client ID for Google OAuth 2.0 (e.g., `123456789012-a12bcde3fg4h56jk7lmn8o9pqrs01tuv.apps.googleusercontent.com`)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Other Services
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Backend API:** This application requires the [READ API](https://github.com/fariadavi/read-api) to be running and accessible at the URL specified in `REACT_APP_SERVER_URL`.
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
